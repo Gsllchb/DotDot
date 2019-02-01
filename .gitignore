@@ -1,0 +1,14 @@
+# CPython
+__pycache__/
+*.pyc
+
+# Packaging and Distributing
+/build/
+/dist/
+/pylf.egg-info/
+
+# Pycharm
+/.idea/
+
+# virtualenv
+/venv/
