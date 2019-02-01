@@ -29,7 +29,7 @@ See also dot, dotdot, dotdotdot and dotdotdotdot."""
 import os.path
 import sys
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 _ORIGINAL_PATH = sys.path[0]
 
