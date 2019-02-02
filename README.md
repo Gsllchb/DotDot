@@ -6,10 +6,12 @@ ___Make it easy to import the modules in parent directories___
 [![Build Status](https://travis-ci.org/Gsllchb/DotDot.svg?branch=master)](https://travis-ci.org/Gsllchb/DotDot)
 [![downloads](https://img.shields.io/pypi/dm/DotDot.svg)](https://pypistats.org/packages/dotdot)
 
-If you want to solve `ValueError: attempted relative import beyond top-level package`, DotDot may be helpful for you.
+If you want to solve `ValueError: attempted relative import beyond top-level package`, **DotDot** may be helpful for you.
 
 ## Installation
 If it can be installed and imported successfully, it should work correctly.
+
+Install via **pip**:
 ```console
 pip install dotdot
 ```
