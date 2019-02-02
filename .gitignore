@@ -1,6 +1,5 @@
 # CPython
 __pycache__/
-*.pyc
 
 # Packaging and Distributing
 /build/
@@ -9,6 +8,7 @@ __pycache__/
 
 # Pycharm
 /.idea/
-
-# virtualenv
 /venv*/
+
+# Test
+.pytest_cache/
