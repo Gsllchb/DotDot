@@ -1,6 +1,7 @@
 # Release Notes
 
 ## unreleased
+* Improve the Quick Start in `README.md`
 * Minor improve `setup.cfg`
 
 ## v0.2.0 (2019-2-2)

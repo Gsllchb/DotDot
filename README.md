@@ -22,14 +22,14 @@ Consider a common project structure as following:
 FooProject
     ├── foo
     │    ├── script.py
-    │    └── util0.py
-    └── util1.py
+    │    └── util.py
+    └── util.py
 ```
-Now, `script.py` can import `util1` by importing `dotdot` first. Like this:
+Now, `script.py` can import the `util` in the project root directory by importing `dotdot` first. Like this:
 ```python
 import dotdot
-import foo.util0
-import util1
+import foo.util
+import util
 ```
 Moreover, you can import the modules in grandparent or even great grandparent directory by importing `dotdotdot` or `dotdotdotdot` first.
 
