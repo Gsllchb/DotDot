@@ -1,4 +1,4 @@
-# Release Notes
+# Changelog
 
 ## unreleased
 * Improve the Quick Start in `README.md`
