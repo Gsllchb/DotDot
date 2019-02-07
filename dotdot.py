@@ -23,11 +23,19 @@
 # SOFTWARE.
 
 """DotDot: Make it easy to import the modules in parent directories.
-This module replaces sys.path[0] with its own parent directory in import time.
-See also dot, dotdotdot and dotdotdotdot."""
+
+This module replaces `sys.path[0]` with its own parent directory in import time
+if it is the first import amongst `dot`, `dotdot`, `dotdotdot`, and
+`dotdotdotdot` in chronological order in a Python session, otherwise, does
+nothing.
+
+The scripts in the child directories of project roots should import `dotdot`
+before importing any local module.
+
+See also `dot`, `dotdotdot`, and `dotdotdotdot`."""
 
 import _dotdot
 
 __version__ = _dotdot.__version__
 
-_dotdot.set_level(1)
+_dotdot.set_level_if_valid(1)

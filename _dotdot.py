@@ -31,11 +31,15 @@ import sys
 
 __version__ = "0.2.0"
 
-_ORIGINAL_PATH = sys.path[0]
+_has_called = False
 
 
-def set_level(level):
-    path = _ORIGINAL_PATH
+def set_level_if_valid(level):
+    global _has_called
+    if _has_called:
+        return
+    _has_called = True
+    path = sys.path[0]
     for i in range(level):
         path = os.path.dirname(path)
     sys.path[0] = path

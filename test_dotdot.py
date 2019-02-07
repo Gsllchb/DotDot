@@ -27,6 +27,8 @@
 import os.path
 import sys
 
+import _dotdot
+
 DOT = sys.path[0]
 DOTDOT = os.path.dirname(DOT)
 DOTDOTDOT = os.path.dirname(DOTDOT)
@@ -35,23 +37,37 @@ DOTDOTDOTDOT = os.path.dirname(DOTDOTDOT)
 
 def teardown_function():
     sys.path[0] = DOT
+    _dotdot._has_called = False
 
 
 def test_dot():
     import dot
+    import dotdot
+    import dotdotdot
+    import dotdotdotdot
     assert sys.path[0] == DOT
 
 
 def test_dotdot():
     import dotdot
+    import dot
+    import dotdotdotdot
+    import dotdotdot
     assert sys.path[0] == DOTDOT
 
 
 def test_dotdotdot():
     import dotdotdot
+    import dot
+    import dotdotdot
+    import dotdot
+    import dot
     assert sys.path[0] == DOTDOTDOT
 
 
 def test_dotdotdotdot():
     import dotdotdotdot
+    import dot
+    import dotdot
+    import dotdotdot
     assert sys.path[0] == DOTDOTDOTDOT

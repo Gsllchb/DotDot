@@ -23,11 +23,16 @@
 # SOFTWARE.
 
 """DotDot: Make it easy to import the modules in parent directories.
-This module does nothing in import time.
-See also dotdot, dotdotdot and dotdotdotdot."""
+
+This module does nothing in import time except being a placeholder.
+
+The scripts in project root directories should import `dot` before importing any
+local module.
+
+See also `dotdot`, `dotdotdot`, and `dotdotdotdot`."""
 
 import _dotdot
 
 __version__ = _dotdot.__version__
 
-_dotdot.set_level(0)
+_dotdot.set_level_if_valid(0)
