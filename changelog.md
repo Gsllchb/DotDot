@@ -1,6 +1,6 @@
 # Changelog
 
-## unreleased
+## v1.0.0 (2019-2-8)
 * __Be more friendly to multiple imports of DotDot in a project__
 * Improve the Quick Start in `README.md`
 * Minor improve `setup.cfg`
