@@ -9,4 +9,8 @@ python:
   - "3.6"
   - "3.7-dev"
 install: pip install pytest
-script: pytest
+script:
+  - pytest tests/test_dot.py
+  - pytest tests/test_dotdot.py
+  - pytest tests/test_dotdotdot.py
+  - pytest tests/test_dotdotdotdot.py
