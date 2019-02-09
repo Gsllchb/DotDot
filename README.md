@@ -25,7 +25,7 @@ FooProject
     │    └── util.py
     └── util.py
 ```
-Now, `script.py` can import the `util` in the project root directory by importing `dotdot` first. Like this:
+Now, `script.py` can import those `util`s by importing `dotdot` first. Like this:
 ```python
 import dotdot
 import foo.util
