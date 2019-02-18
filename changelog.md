@@ -1,6 +1,7 @@
 # Changelog
 
 ## unreleased
+* Fix the typos in `README.md`
 * Minor improve the Quick Start in `README.md`
 
 ## v1.0.0 (2019-2-8)

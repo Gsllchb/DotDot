@@ -33,5 +33,5 @@ import util
 ```
 Moreover, you can import the modules in grandparent or even great grandparent directory by importing `dotdotdot` or `dotdotdotdot` first.
 
-## How it work
+## How It Works
 DotDot does this magic by changing `sys.path[0]` in __import time__.
