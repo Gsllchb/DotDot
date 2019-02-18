@@ -1,8 +1,7 @@
 # Changelog
 
-## unreleased
-* Fix the typos in `README.md`
-* Minor improve the `Quick Start` in `README.md`
+## v1.0.1 (2019-2-18)
+* Improve `README.md`
 
 ## v1.0.0 (2019-2-8)
 * __Be more friendly to multiple imports of DotDot in a project__
