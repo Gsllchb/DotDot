@@ -3,8 +3,6 @@ ___Make it easy to import the modules in parent directories___
 
 [![released version](https://img.shields.io/pypi/v/DotDot.svg)](https://pypi.org/project/dotdot)
 [![license](https://img.shields.io/github/license/Gsllchb/DotDot.svg)](https://github.com/Gsllchb/DotDot/blob/master/LICENSE.txt)
-[![Build Status](https://travis-ci.org/Gsllchb/DotDot.svg?branch=master)](https://travis-ci.org/Gsllchb/DotDot)
-[![downloads](https://img.shields.io/pypi/dm/DotDot.svg)](https://pypistats.org/packages/dotdot)
 
 If you want to solve `ValueError: attempted relative import beyond top-level package`, **DotDot** may be helpful for you.
 
