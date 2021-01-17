@@ -29,7 +29,7 @@ See also dot, dotdot, dotdotdot and dotdotdotdot."""
 import os.path
 import sys
 
-__version__ = "1.0.1"
+__version__ = "1.1.0"
 
 _has_called = False
 
@@ -43,3 +43,10 @@ def set_level_if_valid(level):
     for i in range(level):
         path = os.path.dirname(path)
     sys.path[0] = path
+
+
+def do_nothing():
+    """
+    Do nothing but just want Pycharm or anything else happy. :)
+    """
+    pass

@@ -35,6 +35,7 @@ before importing any local module.
 See also `dot`, `dotdotdot`, and `dotdotdotdot`."""
 
 import _dotdot
+from _dotdot import do_nothing
 
 __version__ = _dotdot.__version__
 

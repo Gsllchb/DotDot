@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.1.0 (2021-1-17)
+* Improve `README.md`
+
 ## v1.0.1 (2019-2-18)
 * Improve `README.md`
 

@@ -35,6 +35,7 @@ The scripts in the grandchild directories of project roots should import
 See also `dot`, `dotdot`, and `dotdotdotdot`."""
 
 import _dotdot
+from _dotdot import do_nothing
 
 __version__ = _dotdot.__version__
 

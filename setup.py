@@ -34,7 +34,7 @@ def main():
         name="dotdot",
         version=_dotdot.__version__,
         author="Gsllchb",
-        author_email="gsllchb@gmail.com",
+        author_email="gsllchb@qq.com",
         py_modules=(
             "_dotdot",
             "dot",
