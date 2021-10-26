@@ -31,20 +31,31 @@ import sys
 
 __version__ = "1.1.0"
 
-_has_called = False
+_has_called = set([])
 
+original_sys_path = None
 
 def set_level_if_valid(level):
     global _has_called
-    if _has_called:
+    global original_sys_path
+    if not original_sys_path:
+        original_sys_path = sys.path[0]
+    if level in _has_called:
         return
-    _has_called = True
+    _has_called.add(level)
     path = sys.path[0]
     for i in range(level):
         path = os.path.dirname(path)
     sys.path[0] = path
 
-
+def restore_sys_path():
+    """
+    Restore the original system path
+    """
+    if not original_sys_path:
+        return
+    sys.path[0] = original_sys_path
+    
 def do_nothing():
     """
     Do nothing but just want Pycharm or anything else happy. :)

@@ -12,8 +12,4 @@ sys.path.append(DOTDOT)
 
 def test_dotdotdotdot():
     import dotdotdotdot
-    import dotdotdot
-    import dotdot
-    import dot
-    import dotdotdot
     assert sys.path[0] == DOTDOTDOTDOT

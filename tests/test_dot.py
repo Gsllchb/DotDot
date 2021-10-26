@@ -9,10 +9,7 @@ DOTDOTDOTDOT = os.path.dirname(DOTDOTDOT)
 
 sys.path.append(DOTDOT)
 
-
 def test_dot():
     import dot
-    import dotdot
-    import dotdotdot
-    import dotdotdotdot
     assert sys.path[0] == DOT
+

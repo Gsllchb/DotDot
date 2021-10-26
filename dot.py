@@ -36,4 +36,5 @@ from _dotdot import do_nothing
 
 __version__ = _dotdot.__version__
 
+_dotdot.restore_sys_path()
 _dotdot.set_level_if_valid(0)
