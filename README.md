@@ -14,22 +14,33 @@ Install via **pip**:
 pip install dotdot
 ```
 
-## Quick Start
-Consider a common project structure as following:
+## Example
 ```
-FooProject
-    ├── foo
-    │    ├── script.py
-    │    └── util.py
-    └── util.py
+root dir
+    ├── apple.py *****************
+    │   * import dot             *
+    │   * import dir.boy         *
+    │   * import dir.subdir.cat  *
+    │   * script code ...        *
+    │   **************************
+    │
+    └── dir
+         ├── boy.py *******************
+         │   * import dotdot          *
+         │   * import apple           *
+         │   * import dir.subdir.cat  *
+         │   * script code ...        *
+         │   **************************
+         │    
+         └── subdir
+                └── cat.py *******************
+                    * import dotdotdot       *
+                    * import apple           *
+                    * import dir.boy         *
+                    * script code ...        *
+                    **************************
 ```
-Now, `script.py` can import those `util`s by importing `dotdot` first. Like this:
-```python
-import dotdot
-import foo.util
-import util
-```
-Moreover, you can import the modules in grandparent or even great grandparent directory by importing `dotdotdot` or `dotdotdotdot` first.
+
 
 ## How It Works
 DotDot does this magic by changing `sys.path[0]` in __import time__.
