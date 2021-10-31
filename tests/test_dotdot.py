@@ -1,7 +1,7 @@
 # coding: utf-8
 import os.path
 import sys
-import importlib
+
 DOT = sys.path[0]
 DOTDOT = os.path.dirname(DOT)
 DOTDOTDOT = os.path.dirname(DOTDOT)
